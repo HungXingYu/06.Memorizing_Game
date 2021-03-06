@@ -36,3 +36,4 @@
 > ## 連結
 
 1. [CodePen](https://codepen.io/Clare46/pen/xxRZeJK)
+2. [GitHub Pages](https://hungxingyu.github.io/06.Memorizing_Game/)
