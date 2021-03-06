@@ -1,0 +1,240 @@
+.start .bannerTitle, .completed .bannerTitle, .start ul, .completed ul, .start button, .completed button, #header, #cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  width: 85%;
+  font-family: "Nunito", sans-serif;
+}
+
+.start,
+.completed {
+  position: absolute;
+  z-index: 999;
+  top: 35vh;
+  padding: 20px;
+  min-width: 720px;
+  background-color: rgba(255, 153, 148, 0.9);
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-animation-name: banner;
+          animation-name: banner;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@-webkit-keyframes banner {
+  from {
+    top: 0;
+  }
+  to {
+    top: 35vh;
+  }
+}
+
+@keyframes banner {
+  from {
+    top: 0;
+  }
+  to {
+    top: 35vh;
+  }
+}
+
+.start .bannerTitle, .completed .bannerTitle {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #ffc86b;
+  -webkit-box-shadow: 10px 5px 0 rgba(255, 200, 107, 0.5);
+          box-shadow: 10px 5px 0 rgba(255, 200, 107, 0.5);
+}
+
+.start .bannerTitle img, .completed .bannerTitle img {
+  max-width: 3em;
+}
+
+.start .bannerTitle h2, .completed .bannerTitle h2 {
+  padding: 0.5em 0.5em 0 0.5em;
+}
+
+.start ul, .completed ul {
+  background-color: #fff2a3;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  padding: 0;
+  font-weight: bolder;
+  -webkit-box-shadow: 10px 5px 0 rgba(255, 242, 163, 0.5);
+          box-shadow: 10px 5px 0 rgba(255, 242, 163, 0.5);
+}
+
+.start ul li, .completed ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.start ul li img, .completed ul li img {
+  max-width: 3em;
+}
+
+.start button, .completed button {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+  background-color: #ffc86b;
+  width: 20%;
+  font-size: 25px;
+  font-weight: bolder;
+  padding: 5px;
+  border-radius: 15px;
+  border-color: #f5dcd1;
+  border-width: 3px;
+  color: #ff6861;
+  -webkit-box-shadow: 0 1px 0 #cfcfcf;
+          box-shadow: 0 1px 0 #cfcfcf;
+}
+
+body {
+  min-width: 720px;
+}
+
+#header {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-top: 20px;
+}
+
+#header .title {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#header .title img {
+  max-width: 3em;
+}
+
+#header .title h2 {
+  padding-left: 0.5em;
+  padding-top: 0.5em;
+}
+
+#header .round {
+  margin: 0;
+  color: #feb17d;
+  font-weight: bolder;
+}
+
+#header .score {
+  margin: 0;
+  color: #ff9994;
+  font-weight: bolder;
+}
+
+#header .tried {
+  margin: 0;
+  color: #ffc86b;
+  font-weight: bolder;
+}
+
+#cards {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: 1px solid #000;
+  margin-bottom: 20px;
+}
+
+#cards .card {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-flex: 7%;
+      -ms-flex: 7% 1 1;
+          flex: 7% 1 1;
+  height: 8vw;
+  border: 2px solid #e0e0e0;
+  margin: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#cards .card img {
+  max-width: 30%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#cards .card p {
+  margin: 3px;
+  font-size: 10px;
+}
+
+#cards .card p:last-child {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+#cards .back {
+  background: url("https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/9222/ExportedContentImage_00.png");
+  background-size: cover;
+}
+
+#cards .paired {
+  background-color: #dae0e3;
+}
+
+#cards .wrong {
+  -webkit-animation-name: wrongAnimation;
+          animation-name: wrongAnimation;
+  -webkit-animation-duration: 0.2s;
+          animation-duration: 0.2s;
+  -webkit-animation-iteration-count: 5;
+          animation-iteration-count: 5;
+}
+
+@-webkit-keyframes wrongAnimation {
+  to {
+    border: 2px solid #fff2a3;
+  }
+}
+
+@keyframes wrongAnimation {
+  to {
+    border: 2px solid #fff2a3;
+  }
+}
+/*# sourceMappingURL=style.css.map */
