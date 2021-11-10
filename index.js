@@ -11,10 +11,10 @@ const GAME_STATE = {
 
 //撲克牌牌面符號
 const Symbols = [
-  "https://image.flaticon.com/icons/svg/105/105223.svg", // 黑桃
-  "https://image.flaticon.com/icons/svg/105/105220.svg", // 愛心
-  "https://image.flaticon.com/icons/svg/105/105212.svg", // 方塊
-  "https://image.flaticon.com/icons/svg/105/105219.svg" // 梅花
+  "https://www.svgrepo.com/show/320181/spades.svg", // 黑桃
+  "https://www.svgrepo.com/show/59885/heart.svg", // 愛心
+  "https://www.svgrepo.com/show/69107/diamond.svg", // 方塊
+  "https://www.svgrepo.com/show/364387/club-fill.svg" // 梅花
 ];
 
 //#region  MVC模式之V--view物件(與介面相關程式歸類處)
@@ -160,7 +160,7 @@ const view = {
     div.classList.add("start");
     div.innerHTML = `            
             <div class="bannerTitle">
-                <img src="https://image.flaticon.com/icons/svg/107/107585.svg">
+                <img src="https://www.svgrepo.com/show/149260/poker-playing-cards.svg">
                 <h2>Game Rule</h2>
             </div>
             <ul>
